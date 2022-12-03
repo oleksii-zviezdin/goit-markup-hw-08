@@ -1,0 +1,91 @@
+/* --- MODAL STYLES --- */
+.modal {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(1);
+
+	width: 528px;
+	min-height: 581px;
+	padding: 40px;
+
+	background: var(--background-color-card-content);
+
+	box-shadow: var(--card-box-shadow);
+	border-radius: 4px;
+
+	transition: transform var(--transform-and-animation);
+
+	user-select: none;
+}
+
+.modal__title {
+	display: block;
+
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 1.15;
+	letter-spacing: 0.03em;
+	text-align: center;
+
+	margin-bottom: 12px;
+
+	color: var(--h-headline-text-color);
+}
+
+.modal__order-form {
+	margin-bottom: 30px;
+}
+
+.modal__massage {
+	margin-bottom: 20px;
+}
+
+.modal__close-btn {
+	position: absolute;
+	top: 8px;
+	right: 8px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 30px;
+	height: 30px;
+
+	cursor: pointer;
+
+	color: var(--accent-text-color)	;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 50%;
+
+	background-color: var(--background-color-header);
+
+	transition: background-color var(--transform-and-animation), scale var(--transform-and-animation), box-shadow var(--transform-and-animation);
+
+        &:hover,
+        &:focus {
+            outline: none;
+            color: var(--accent-text-color);
+        }
+
+        &:hover .modal__close-icon,
+        &:focus .modal__close-icon {
+            fill: currentColor;
+        }
+
+        &:active {
+            scale: 1.05;
+            box-shadow: var(--card-box-shadow);
+        }
+}
+
+.modal__checkbox {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	gap: 10px;
+
+	margin-bottom: 0;
+} 

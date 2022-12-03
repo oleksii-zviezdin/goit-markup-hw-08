@@ -1,0 +1,17 @@
+/* --- CONTAINER --- */
+.container {
+	width: 1200px;
+	margin-right: auto;
+	margin-left: auto;	
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.container--flex {
+	display: flex;
+}
+
+.container__buttons {
+	margin-bottom: 50px;
+	padding-bottom: 0;
+}

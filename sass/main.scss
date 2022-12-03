@@ -1,0 +1,38 @@
+// Modern Normalize
+@import './utils/normalize';
+
+// Utils styles
+@import './utils/variables';
+@import './utils/visually-hidden';
+@import './utils/is-hidden';
+@import './utils/backdrop';
+
+
+// Base styles
+@import './base/base';
+@import './base/reset';
+@import './base/card-set';
+@import './base/card-thumb';
+@import './base/order-form';
+@import './base/modal';
+
+// Components styles
+@import './components/typography';
+@import './components/section';
+@import './components/container';
+@import './components/page-header';
+@import './components/logo';
+@import './components/nav';
+@import './components/contact';
+@import './components/hero';
+@import './components/button';
+@import './components/benefits';
+@import './components/work';
+@import './components/team';
+@import './components/socials';
+@import './components/card';
+@import './components/costumer';
+@import './components/buttons';
+@import './components/contacts';
+@import './components/subscribe-form';
+@import './components/page-footer';

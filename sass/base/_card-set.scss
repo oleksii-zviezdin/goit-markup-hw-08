@@ -1,0 +1,31 @@
+/* --- CARD-SET (GRID) --- */
+.card-set {
+	display: flex;
+	flex-wrap: wrap;
+
+	gap: var(--width-gap-list);
+	
+	justify-content: center;
+
+	cursor: pointer;
+}
+
+.card-set__item {
+	flex-basis: calc(
+		(100% - var(--width-gap-list) * (var(--column-pieces) - 1)) /
+			var(--column-pieces)
+	);
+
+	transition: box-shadow var(--transform-and-animation);
+
+            &:hover,
+            &:focus {
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+                1px 4px 6px rgba(0, 0, 0, 0.16);
+        }
+
+			&:hover .card-thumb__text,
+			&:focus .card-thumb__text {
+			transform: translateY(0);
+		}
+}

@@ -1,0 +1,20 @@
+/* --- CONTACTS STYLES --- */
+.contacts__address {
+	font-style: normal;
+	color: var(--address-text-color);
+}
+
+.contacts__link {
+	text-decoration: none;
+	transition: color var(--transform-and-animation);
+
+		&:hover,
+		&:focus {
+		outline: none;	
+		color: var(--accent-text-color);
+	}
+}
+
+.contacts__item + .contacts__item {
+	margin-top: 9px;
+}

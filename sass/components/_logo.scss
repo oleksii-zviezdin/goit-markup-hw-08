@@ -1,0 +1,35 @@
+/* --- LOGO STYLES --- */
+.logo {
+	display: inline-block;
+	font-family: "Raleway";
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.19;
+	letter-spacing: 0.03em;
+
+	color: var(--accent-text-color);
+
+	&:hover,
+	&:focus {
+		outline: none;
+	}
+}
+
+.logo__text {	
+	display: inline-block;
+	font-family: "Raleway";
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.19;
+	letter-spacing: 0.03em;
+
+	color: var(--accent-text-color);
+}
+
+.logo__text--black {
+	color: var(--color-studio-header);
+}
+
+.logo__text--white {
+	color: var(--color-studio-footer);
+}

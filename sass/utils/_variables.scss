@@ -1,0 +1,71 @@
+/* --- VARIBLES --- */
+:root {
+	/* background-color  */
+	--background-color-header: #ffffff;
+	--background-color-footer-hero: #2f303a;
+	--background-color-teams: #f5f4fa;
+	--background-color-button: #2196f3;
+	--background-color-button-disactive: #f5f4fa;
+	--background-color-button-accent: #188ce8;
+	--background-color-card__caption: #ffffff;
+	--background-color-card-content: #ffffff;
+	--background-color-socials-icons: #2196f3;
+	--background-color-socials-icons-footer: #ffffff1a;
+	--background-color-icons-strengths: #f5f4fa;
+	--background-color-work-section: #2f303acc;
+	--overlay-background-color: #2196f3e6;
+
+
+	/* text color */
+	--accent-text-color: #2196f3;
+	--color-text-white: #ffffff;
+
+	/* icons color */
+	--social-icons-color: #afb1b8;
+	--social-icons-active-color: #ffffff;
+
+	--social-icons-footer-color: #ffffff;
+
+	--costumer-color: #afb1b8;
+	--costumer-accent-color: #2196f3;
+
+	/* hero <h1> */
+	--h1-headline-text-color: #ffffff;
+
+	/* <h> */
+	--h-headline-text-color: #212121;
+	--border-botton-header: #ececec;
+
+	/* <p> color */
+	--primary-text-color: #757575;
+
+	/* footer__contacts */
+	--footer-contact-color: #ffffff99;
+	--address-text-color: #ffffff;
+
+	/* logo color */
+	--web-color: #2196f3;
+	--color-studio-footer: #ffffff;
+	--color-studio-header: #000000;
+
+	/* width-gap */
+	--width-gap-header: 50px;
+	--width-gap-list: 30px;
+
+	/* box-shadow */
+	--card-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+		0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+	--button-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+		0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+
+	/* gap-pieces */
+	--gap-pieces: 2;
+
+	/* column-pieces */
+	--column-pieces: 3;
+
+	/* border */
+	--card-border-color: #eeeeee;
+
+	--transform-and-animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

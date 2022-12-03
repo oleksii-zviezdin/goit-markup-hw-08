@@ -1,0 +1,44 @@
+/* --- BUTTON STYLES --- */
+.button {
+	display: inline-block;
+
+	font-family: inherit;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.88;
+	letter-spacing: 0.06em;
+
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 32px;
+	padding-right: 32px;
+
+	border: none;
+	color: var(--color-text-white);
+	background-color: var(--background-color-button);
+
+	cursor: pointer;
+
+	box-shadow: 0px 0px 0px transparent;
+	border-radius: 4px;
+
+	transition: background-color var(--transform-and-animation), box-shadow var(--transform-and-animation);
+
+	&:hover,
+	&:focus {
+		outline: none;
+		background-color: var(--background-color-button-accent);
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	}
+
+}
+
+
+.button__icon-send {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	
+	right: 28px;
+	fill: currentColor;
+}

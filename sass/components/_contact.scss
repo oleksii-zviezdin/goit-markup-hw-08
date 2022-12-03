@@ -1,0 +1,25 @@
+/* --- CONTACT STYLES --- */
+.contact {
+	margin-left: auto;
+}
+
+.contact__icon-email,
+.contact__icon-smartphone {
+	fill: currentColor;
+}
+
+.contact__link {
+	transition: color var(--transform-and-animation);
+
+	&:hover,
+	&:focus {
+		outline: none;
+		color: var(--accent-text-color);
+	}
+}
+
+.contact__list {
+	display: flex;
+	gap: var(--width-gap-list);
+	align-items: center;
+}

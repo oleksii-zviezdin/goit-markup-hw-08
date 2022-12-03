@@ -1,0 +1,30 @@
+/* --- HEADER STYLES --- */
+.header {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+
+	border-bottom: 1px solid var(--border-botton-header);
+}
+
+.header__container {
+	align-items: center;
+}
+
+.header__link {
+	padding-top: 32px;
+	padding-bottom: 32px;
+}
+
+.header__nav {
+	margin-left: 90px;
+}
+
+.header__contact {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+
+	color: var(--primary-text-color);
+}

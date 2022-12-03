@@ -1,0 +1,40 @@
+/* --- FOOTER STYLES --- */
+.footer {
+	display: flex;
+	font-size: 14px;
+	line-height: 1.71;
+	letter-spacing: 0.03em;
+
+	padding-top: 60px;
+	padding-bottom: 60px;
+
+	background-color: var(--background-color-footer-hero);
+}
+
+.footer-container {
+	display: flex;
+	gap: 70px;
+}
+
+.footer__contacts {
+	color: var(--footer-contact-color);
+}
+
+.footer__logo {
+	margin-bottom: 20px;
+}
+
+.footer__socials {
+	padding-top: 12px;
+	padding-bottom: 40px;
+
+	margin-left: 70px;
+}
+
+.footer__list {
+	margin-top: 20px;
+}
+
+.footer__container {
+	align-items: baseline;
+}

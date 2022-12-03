@@ -1,0 +1,37 @@
+/* --- BUTTONS STYLES --- */
+.buttons__item {
+	font-family: inherit;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.63;
+	text-align: center;
+	letter-spacing: 0.03em;
+
+	padding-top: 6px;
+	padding-bottom: 6px;
+	padding-left: 22px;
+	padding-right: 22px;
+
+	background-color: var(--background-color-button-disactive);
+
+	border: none;
+	border-radius: 4px;
+	transition: color var(--transform-and-animation), background-color var(--transform-and-animation), box-shadow var(--transform-and-animation);
+
+	&:hover,
+	&:focus {
+		outline: none;
+		background-color: var(--background-color-button-accent);
+		color: var(--address-text-color);
+
+		box-shadow: var(--button-box-shadow);
+
+		cursor: pointer;
+	}
+}
+
+.buttons__list {
+	display: flex;
+	justify-content: center;
+	gap: 8px;
+}
