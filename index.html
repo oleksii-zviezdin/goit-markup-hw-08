@@ -28,7 +28,7 @@
 	<!-- BODY-->
 	<body>
 		<!-- шапка сайту -->
-		<header style="display: none" class="header">
+		<header  class="header">
 			<div class="container container--flex header__container">
 				<!-- prettier-ignore -->
 				<a href="./index.html" class="logo">
@@ -82,7 +82,7 @@
 
 		<main>
 			<!-- Замовити послугу -->
-			<section style="display: none" class="section hero__section">
+			<section " class="section hero__section">
 				<div class="container">
 					<div class="hero">
 						<h1 class="hero__title hero__title--mb">
@@ -96,7 +96,7 @@
 			</section>
 
 			<!-- Перелік плюсів фірми -->
-			<section style="display: none" class="section benefits__section">
+			<section  class="section benefits__section">
 				<div class="container">
 					<article class="benefits">
 						<h2 class="benefits__title visually-hidden">Наші переваги</h2>
@@ -209,13 +209,34 @@
 						<ul class="team__list">
 							<li class="team__item">
 								<div class="card">
-									<img
-										src="./images/studio/team/01-product-designer.jpg"
+									<picture>
+										<!-- desktop screen -->
+										<source
+											media="(min-width: 1200px)"
+											srcset="./images/studio/team/01_l@1x-270.jpg x1, ./images/studio/team/01_l@2x-540.jpg x2"
+										>
+
+										<!-- tablet screen -->
+										<source
+											media="(min-width: 768px)"
+											srcset="./images/studio/team/01_m@1x-354.jpg x1, ./images/studio/team/01_m@2x-708.jpg x2"
+										>
+										
+										<!-- phone screen -->
+										<source
+										media="(max-width: 768px)"
+										srcset="./images/studio/team/01_s@1x-450.jpg x1, ./images/studio/team/01_s@2x-900.jpg x2"
+									>
+
+										<img
+										src="./images/studio/team/01_s@1x-450.jpg"
 										alt="фото з паном Ігорем Дем'яненко"
-										width="270"
-										height="260"
-									/>
-									
+										width="450"
+										height="460"
+										loading="lazy"
+										/>
+									</picture>
+																		
 									<div class="card__caption">
 										<h3 class="card__title">Ігор Дем'яненко</h3>
 										<p class="card__description">Product Designer</p>
@@ -281,12 +302,33 @@
 							</li>
 							<li class="team__item">								
 								<div class="card">
-									<img
-										src="./images/studio/team/02-frontend-developer.jpg"
+									<picture>
+										<!-- desktop screen -->
+										<source
+											media="(min-width: 1200px)"
+											srcset="./images/studio/team/02_l@1x-270.jpg x1, ./images/studio/team/02_l@2x-540.jpg x2"
+										>
+
+										<!-- tablet screen -->
+										<source
+											media="(min-width: 768px)"
+											srcset="./images/studio/team/02_m@1x-354.jpg x1, ./images/studio/team/02_m@2x-708.jpg x2"
+										>
+										
+										<!-- phone screen -->
+										<source
+										media="(max-width: 768px)"
+										srcset="./images/studio/team/02_s@1x-450.jpg x1, ./images/studio/team/02_s@2x-900.jpg x2"
+									>
+
+										<img
+										src="./images/studio/team/02_s@1x-450.jpg"
 										alt="фото з пані Ольгою Рєпіною"
-										width="270"
-										height="260"
-									/>
+										width="450"
+										height="460"
+										loading="lazy"
+										/>
+									</picture>
 
 									<div class="card__caption">
 										<h3 class="card__title">Ольга Рєпіна</h3>
@@ -353,12 +395,34 @@
 							</li>
 							<li class="team__item">
 								<div class="card">
-									<img
-										src="./images/studio/team/03-marketing.jpg"
+									<picture>
+										<!-- desktop screen -->
+										<source
+											media="(min-width: 1200px)"
+											srcset="./images/studio/team/03_l@1x-270.jpg x1, ./images/studio/team/03_l@2x-540.jpg x2"
+										>
+
+										<!-- tablet screen -->
+										<source
+											media="(min-width: 768px)"
+											srcset="./images/studio/team/03_m@1x-354.jpg x1, ./images/studio/team/03_m@2x-708.jpg x2"
+										>
+										
+										<!-- phone screen -->
+										<source
+										media="(max-width: 768px)"
+										srcset="./images/studio/team/03_s@1x-450.jpg x1, ./images/studio/team/03_s@2x-900.jpg x2"
+									>
+
+										<img
+										src="./images/studio/team/03_s@1x-450.jpg"
 										alt="фото з паном Миколою Тарасовим"
-										width="270"
-										height="260"
-									/>
+										width="450"
+										height="460"
+										loading="lazy"
+										/>
+									</picture>
+									
 									<div class="card__caption">
 										<h3 class="card__title">Микола Тарасов</h3>
 										<p class="card__description">Marketing</p>
@@ -424,12 +488,34 @@
 							</li>
 							<li class="team__item">
 								<div class="card">
-									<img
-										src="./images/studio/team/04-ui-designer.jpg"
+									<picture>
+										<!-- desktop screen -->
+										<source
+											media="(min-width: 1200px)"
+											srcset="./images/studio/team/04_l@1x-270.jpg x1, ./images/studio/team/04_l@2x-540.jpg x2"
+										>
+
+										<!-- tablet screen -->
+										<source
+											media="(min-width: 768px)"
+											srcset="./images/studio/team/04_m@1x-354.jpg x1, ./images/studio/team/04_m@2x-708.jpg x2"
+										>
+										
+										<!-- phone screen -->
+										<source
+										media="(max-width: 768px)"
+										srcset="./images/studio/team/04_s@1x-450.jpg x1, ./images/studio/team/04_s@2x-900.jpg x2"
+									>
+
+										<img
+										src="./images/studio/team/04_s@1x-450.jpg"
 										alt="фото з паном Михайлом Єрмаковим"
-										width="270"
-										height="260"
-									/>
+										width="450"
+										height="460"
+										loading="lazy"
+										/>
+									</picture>
+
 									<div class="card__caption">
 										<h3 class="card__title">Михайло Єрмаков</h3>
 										<p class="card__description">UI Designer</p>
@@ -500,7 +586,7 @@
 			</section>
 
 			<!-- Постійні клієнти -->
-			<section style="display: none" class="section">
+			<section  class="section">
 				<div class="container">
 					<article class="costumer">
 						<h2 class="costumer__title">Постійні клієнти</h2>
@@ -590,7 +676,7 @@
 		</main>
 		
 		<!-- підвал сайту -->
-		<footer style="display: none" class="footer">
+		<footer  class="footer">
 			<div class="container container--flex footer__container">
 				<div class="container--flex">
 
@@ -710,7 +796,7 @@
 			</div>			
 		</footer>
 
-		<div style="display: none" class="backdrop is-hidden" data-modal>
+		<div  class="backdrop is-hidden" data-modal>
 			<div class="modal">
 				<button type="button" class="modal__close-btn" data-modal-close>
 					<svg class="modal__close-icon" width="18" height="18">
