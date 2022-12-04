@@ -28,7 +28,7 @@
 	<!-- BODY-->
 	<body>
 		<!-- шапка сайту -->
-		<header class="header">
+		<header style="display: none" class="header">
 			<div class="container container--flex header__container">
 				<!-- prettier-ignore -->
 				<a href="./index.html" class="logo">
@@ -82,7 +82,7 @@
 
 		<main>
 			<!-- Замовити послугу -->
-			<section class="section hero__section">
+			<section style="display: none" class="section hero__section">
 				<div class="container">
 					<div class="hero">
 						<h1 class="hero__title hero__title--mb">
@@ -96,7 +96,7 @@
 			</section>
 
 			<!-- Перелік плюсів фірми -->
-			<section class="section benefits__section">
+			<section style="display: none" class="section benefits__section">
 				<div class="container">
 					<article class="benefits">
 						<h2 class="benefits__title visually-hidden">Наші переваги</h2>
@@ -154,7 +154,7 @@
 			</section>
 
 			<!-- Чим ми займаємося -->
-			<section class="section">
+			<section class="section section__work">
 				<div class="container">
 					<article class="work">
 						<h2 class="work__title">Чим ми займаємося</h2>
@@ -163,7 +163,7 @@
 							<li class="work__item">
 								<div class="work__card">
 									<img
-										src="./images/index/hand-on-keyboarg-00.jpg"
+										src="./images/studio/hand-on-keyboarg-00.jpg"
 										alt="руки на клавіатурі"
 										width="370"
 										height="294"
@@ -174,7 +174,7 @@
 							<li class="work__item">
 								<div class="work__card">
 									<img
-										src="./images/index/hand-on-laptop-00.jpg"
+										src="./images/studio/hand-on-laptop-00.jpg"
 										alt="руки на ноутбуці"
 										width="370"
 										height="294"
@@ -185,7 +185,7 @@
 							<li class="work__item">
 								<div class="work__card">
 									<img
-										src="./images/index/tablet-in-the-hand-00.jpg"
+										src="./images/studio/tablet-in-the-hand-00.jpg"
 										alt="в руках планшет"
 										width="370"
 										height="294"
@@ -210,7 +210,7 @@
 							<li class="team__item">
 								<div class="card">
 									<img
-										src="./images/index/workers-team/product-designer-01.jpg"
+										src="./images/studio/team/01-product-designer.jpg"
 										alt="фото з паном Ігорем Дем'яненко"
 										width="270"
 										height="260"
@@ -282,7 +282,7 @@
 							<li class="team__item">								
 								<div class="card">
 									<img
-										src="./images/index/workers-team/frontend-developer-02.jpg"
+										src="./images/studio/team/02-frontend-developer.jpg"
 										alt="фото з пані Ольгою Рєпіною"
 										width="270"
 										height="260"
@@ -354,7 +354,7 @@
 							<li class="team__item">
 								<div class="card">
 									<img
-										src="./images/index/workers-team/marketing-03.jpg"
+										src="./images/studio/team/03-marketing.jpg"
 										alt="фото з паном Миколою Тарасовим"
 										width="270"
 										height="260"
@@ -425,7 +425,7 @@
 							<li class="team__item">
 								<div class="card">
 									<img
-										src="./images/index/workers-team/ui-designer-04.jpg"
+										src="./images/studio/team/04-ui-designer.jpg"
 										alt="фото з паном Михайлом Єрмаковим"
 										width="270"
 										height="260"
@@ -500,7 +500,7 @@
 			</section>
 
 			<!-- Постійні клієнти -->
-			<section class="section">
+			<section style="display: none" class="section">
 				<div class="container">
 					<article class="costumer">
 						<h2 class="costumer__title">Постійні клієнти</h2>
@@ -590,7 +590,7 @@
 		</main>
 		
 		<!-- підвал сайту -->
-		<footer class="footer">
+		<footer style="display: none" class="footer">
 			<div class="container container--flex footer__container">
 				<div class="container--flex">
 
@@ -710,7 +710,7 @@
 			</div>			
 		</footer>
 
-		<div class="backdrop is-hidden" data-modal>
+		<div style="display: none" class="backdrop is-hidden" data-modal>
 			<div class="modal">
 				<button type="button" class="modal__close-btn" data-modal-close>
 					<svg class="modal__close-icon" width="18" height="18">
@@ -756,5 +756,6 @@
 		</div>
 		
 		<script src="./js/modal.js"></script>
+		<script src="./js/mobile-menu.js"></script>
 	</body>
 </html>
