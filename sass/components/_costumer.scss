@@ -1,19 +1,47 @@
 /* --- COSTUMER SECTION --- */
 .costumer__title {
-	margin-bottom: 50px;
-
-	font-weight: 700;
-	font-size: 36px;
+	margin-bottom: 30px;
+	
+	font-size: 28px;
 	line-height: 1.17;
 	text-align: center;
 	letter-spacing: 0.03em;
 
 	color: var(--h-headline-text-color);
+
+	@media screen and (min-width: 1200px) {
+		margin-bottom: 50px;
+		
+		font-size: 36px;
+	}
 }	
 
 .costumer__list {
 	display: flex;
-	gap: 30px;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 30px;	
+
+	@media screen and (min-width: 1200px) {
+		flex-wrap: nowrap;
+	}
+}
+
+.costumer__item {
+	@media screen and (max-width: 767px) {
+		--indent: 30px;
+		--columns: 2;
+		
+		flex-basis: calc((100% - var(--indent) * (var(--columns) - 1)) / var(--columns));
+	}
+
+	
+	@media screen and (min-width: 768px) {
+		--indent: 30px;
+		--columns: 3;
+		
+		flex-basis: calc((100% - var(--indent) * (var(--columns) - 1)) / var(--columns));
+	}
 }
 
 .costumer__link {
@@ -21,7 +49,7 @@
 	justify-content: center;
 	align-items: center;
 
-	width: 170px;
+	width: 100%;
 	height: 92px;
 
 	border: 1px solid var(--costumer-color);

@@ -1,6 +1,5 @@
 /* --- FOOTER STYLES --- */
 .footer {
-	display: flex;
 	font-size: 14px;
 	line-height: 1.71;
 	letter-spacing: 0.03em;
@@ -9,11 +8,6 @@
 	padding-bottom: 60px;
 
 	background-color: var(--background-color-footer-hero);
-}
-
-.footer-container {
-	display: flex;
-	gap: 70px;
 }
 
 .footer__contacts {
@@ -25,10 +19,16 @@
 }
 
 .footer__socials {
-	padding-top: 12px;
-	padding-bottom: 40px;
+	@media screen and (max-width: 1199px) {
+		display: flex;
+		flex-direction: column;
+		align-items: center;		
+	}
 
-	margin-left: 70px;
+	@media screen and (min-width: 1200px) {	
+		padding-top: 12px;
+		padding-bottom: 40px;
+	}
 }
 
 .footer__list {
@@ -36,5 +36,26 @@
 }
 
 .footer__container {
-	align-items: baseline;
+	--indent: 60px;
+
+	display: flex;
+	flex-direction: column;
+	gap: var(--indent);
+
+	@media screen and (max-width: 481px) {
+		align-items: center;		
+	}
+
+	@media screen and (max-width: 1199px) {	
+		padding-left: 70px;
+		padding-right: 70px;
+	}
+
+	@media screen and (min-width: 1200px) {	
+		flex-direction: row;
+		align-items: baseline;
+		gap: 0;
+	}
+
+
 }

@@ -1,4 +1,11 @@
 /* --- CONTACTS STYLES --- */
+.contacts {
+	@media screen and (max-width: 1199px) {
+		display: flex;
+		flex-direction: column;
+		align-items: center;		
+	}
+}
 .contacts__address {
 	font-style: normal;
 	color: var(--address-text-color);
@@ -12,6 +19,13 @@
 		&:focus {
 		outline: none;	
 		color: var(--accent-text-color);
+	}
+}
+.contacts__list {
+	@media screen and (max-width: 1199px) {
+		display: flex;
+		flex-direction: column;
+		align-items: center;		
 	}
 }
 

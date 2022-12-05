@@ -16,11 +16,13 @@
 }
 
 .benefits__list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
 
 	//tablet screen
 	@media screen and (min-width: 768px) {				
 		display: flex;
-		flex-wrap: wrap;
 		gap: 30px;
 	}
 	
@@ -34,17 +36,9 @@
 	//phone screen
 	width: 100%;
 
-	&:not(:last-child) {
-		margin-bottom: 30px;
-	}
-
 	//tablet screen	
 	@media screen and (min-width: 768px) {
 		flex-basis: calc((100% - (var(--width-gap-tablet) * (var(--column-pieces-tablet) - 1))) / var(--column-pieces-tablet));
-
-		&:nth-last-child(-n + 4) {
-			margin-bottom: 0;
-		}
 	}	
 }
 
