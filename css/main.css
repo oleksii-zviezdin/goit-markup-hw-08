@@ -332,6 +332,7 @@ summary {
   left: 0;
   width: 100vw;
   height: 100vh;
+  overflow: scroll;
   padding: 93px 15px 94px;
   background-color: rgba(0, 0, 0, 0.2);
   -webkit-transition: opacity var(--transform-and-animation), visibility var(--transform-and-animation);
@@ -619,7 +620,6 @@ img {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  overflow: scroll;
 }
 @media screen and (min-width: 1200px) {
   .modal {
