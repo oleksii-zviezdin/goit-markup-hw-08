@@ -1,13 +1,11 @@
 /* --- MODAL STYLES --- */
 .modal {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%) scale(1);
-
-	width: 528px;
-	min-height: 581px;
+	max-width: 450px;
+	max-height: 609px;
+		
 	padding: 40px;
+	
+	transform: translate(0%, 0%) scale(1);
 
 	background: var(--background-color-card-content);
 
@@ -17,6 +15,17 @@
 	transition: transform var(--transform-and-animation);
 
 	user-select: none;
+
+	@media screen and (min-width: 1200px) {		
+		position: absolute;
+		top: 50%;
+		left: 50%;
+
+		max-width: 528px;
+		min-height: 581px;
+			
+		transform: translate(-50%, -50%) scale(1);	
+	}
 }
 
 .modal__title {
@@ -24,13 +33,17 @@
 
 	font-weight: 700;
 	font-size: 20px;
-	line-height: 1.15;
+	line-height: 1.5;
 	letter-spacing: 0.03em;
 	text-align: center;
 
 	margin-bottom: 12px;
 
 	color: var(--h-headline-text-color);
+
+	@media screen and (min-width: 1200px) {	
+		line-height: 1.15;
+	}
 }
 
 .modal__order-form {

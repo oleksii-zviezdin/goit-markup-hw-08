@@ -1,6 +1,14 @@
 /* --- CONTACT STYLES --- */
 .contact {
-	margin-left: auto;
+	display: none;
+
+	@media screen and (min-width: 768px) {
+		display: block;		
+	}
+
+	@media screen and (min-width: 1200px) {
+		margin-left: auto;
+	}
 }
 
 .contact__icon-email,
@@ -19,7 +27,17 @@
 }
 
 .contact__list {
-	display: flex;
-	gap: var(--width-gap-list);
-	align-items: center;
+	align-content: center;
+
+	@media screen and (min-width: 1200px) {
+		display: flex;
+		gap: var(--width-gap-list);
+	}
+}
+
+.contact__item + .contact__item {
+
+	@media screen and (max-width: 1199px) {
+		margin-top: 10px;
+	}
 }

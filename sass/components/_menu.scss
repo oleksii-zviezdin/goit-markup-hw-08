@@ -1,0 +1,146 @@
+.menu {
+    display: flex;
+  }
+  
+  @media (max-width: 767px) {
+    .menu {
+      display: none;
+    }
+  }
+  
+  .menu__toggle {
+    min-height: 40px;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-left: auto;
+    padding: 10px 0;
+
+    color: var(--h-headline-text-color);
+     
+    background-color: transparent;
+    cursor: pointer;
+
+    border: none;
+    border-radius: 50%;
+    outline: none;
+
+    &:hover,
+    &:focus {
+      color: var(--accent-text-color);
+      
+      .menu__icon {
+        fill: currentColor;
+      }      
+    }
+
+    &--nopaddig {
+      padding: 0;
+      fill: currentColor;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .menu__toggle {
+      display: none;
+    }
+  } 
+  
+  .menu__container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+
+      padding: 48px 83px 48px 40px;
+
+      background-color: var(--background-color-header);
+
+      z-index: 999;
+    
+      transform: translateX(100%);
+      transition: transform var(--transform-and-animation);
+
+      &.is-open {
+      transform: translateX(0);
+
+      & .menu__toggle {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        color: var(--h-headline-text-color);
+      }
+    }
+  }
+    
+  .menu__mobile {
+    --insent: 32px;
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--insent);
+  }
+  
+  .menu__items {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+
+    color: var(--h-headline-text-color);
+
+    &--tel {
+      font-size: 32px;
+      color: var(--accent-text-color);      
+    }
+
+    &--mail {
+      font-size: 24px;
+      color: var(--primary-text-color);      
+    }
+
+    &--socials {
+      font-size: 18px;
+      line-height: 1.22;
+      color: var(--accent-text-color);      
+    }
+
+  }
+  .menu__link {
+    position: relative;
+  }
+  
+  .menu__link--socials::after {
+    position: absolute;
+    top: 50%;
+    right: -10px;
+    transform: translateY(-50%);
+
+    content: "";
+
+    width: 1px;
+    height: 20px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2)    
+  }
+
+  .menu__link--current {
+    color: var(--accent-text-color);
+  }
+
+  .socials__menu {
+    --insent: 20px;
+
+    flex-direction: row;
+    gap: var(--insent);
+  }
+
+  .contacts_menu {
+    margin-top: auto;
+    margin-bottom: 64px;
+  }

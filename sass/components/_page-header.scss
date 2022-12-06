@@ -11,15 +11,30 @@
 .header__container {
 	display: flex;
 	align-items: center;
+	justify-content: center;
+
+	@media screen and (max-width:1199px) {
+		justify-content: space-between;	
+	}
+	
 }
 
 .header__link {
 	padding-top: 32px;
-	padding-bottom: 32px;
+	padding-bottom: 32px;	
+}
+
+.header__link--contact {	
+	@media screen and (min-width:768px) and (max-width:1199px) {
+		padding-top: 0px;
+		padding-bottom: 0px;		
+	}
 }
 
 .header__nav {
-	margin-left: 90px;
+	@media screen and (min-width:1200px) {
+		margin-left: 90px;	
+	}
 }
 
 .header__contact {

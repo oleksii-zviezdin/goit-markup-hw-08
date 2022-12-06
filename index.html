@@ -9,7 +9,7 @@
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-			integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+			integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5Nm2xtKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
 		/>
@@ -28,7 +28,7 @@
 	<!-- BODY-->
 	<body>
 		<!-- шапка сайту -->
-		<header style="display: none" class="header">
+		<header class="header">
 			<div class="container header__container">
 				<!-- prettier-ignore -->
 				<a href="./index.html" class="logo">
@@ -59,7 +59,7 @@
 					<ul class="contact__list">
 						<li class="contact__item">
 							<a
-								href="mailto:info@devstudio.com"			class="contact__link header__contact header__link"
+								href="mailto:info@devstudio.com"			class="contact__link header__contact header__link header__link--contact"
 							>
 								<svg class="contact__icon-email" width="16" height="12">
 									<use href="./images/icons.svg#email"></use>
@@ -68,7 +68,7 @@
 							</a>
 						</li>
 						<li class="contact__item">
-							<a href="tel:+380961111111" class="contact__link header__contact header__link">
+							<a href="tel:+380961111111" class="contact__link header__contact header__link header__link--contact">
 								<svg class="contact__icon-smartphone" width="10" height="16">
 									<use href="./images/icons.svg#smartphone"></use>
 								</svg>
@@ -77,6 +77,18 @@
 						</li>
 					</ul>
 				</div>
+
+				<button
+				class="menu__toggle js-open-menu"
+				aria-expanded="false"
+				aria-controls="menu__mobile"
+			  	>
+					<svg class="menu__icon" width="40" height="40">
+						<use href="./images/icons.svg#icon-menu">
+						</use>
+					</svg>	
+			  	</button>
+				
 			</div>
 		</header>
 
@@ -163,10 +175,12 @@
 							<li class="work__item">
 								<div class="work__card">
 									<img
-										src="./images/studio/hand-on-keyboarg-00.jpg"
+										srcset="./images/studio/01_l@1x.jpg 1x, ./images/studio/01_l@2x.jpg 2x"
+										src="./images/studio/01_l@1x.jpg"
 										alt="руки на клавіатурі"
 										width="370"
 										height="294"
+										loading="lazy"
 									/>
 									<p class="work__description">Десктопні додатки</p>
 								</div>
@@ -174,10 +188,12 @@
 							<li class="work__item">
 								<div class="work__card">
 									<img
+										srcset="./images/studio/02_l@1x.jpg 1x, ./images/studio/02_l@2x.jpg 2x"
 										src="./images/studio/hand-on-laptop-00.jpg"
 										alt="руки на ноутбуці"
 										width="370"
 										height="294"
+										loading="lazy"
 									/>
 									<p class="work__description">Мобільні додаки</p>
 								</div>
@@ -185,10 +201,12 @@
 							<li class="work__item">
 								<div class="work__card">
 									<img
+										srcset="./images/studio/03_l@1x.jpg 1x, ./images/studio/03_l@2x.jpg 2x"
 										src="./images/studio/tablet-in-the-hand-00.jpg"
 										alt="в руках планшет"
 										width="370"
 										height="294"
+										loading="lazy"
 									/>
 									<p class="work__description">Дизайнерскі рішення</p>
 								</div>
@@ -213,19 +231,19 @@
 										<!-- desktop screen -->
 										<source
 											media="(min-width: 1200px)"
-											srcset="./images/studio/team/01_l@1x-270.jpg x1, ./images/studio/team/01_l@2x-540.jpg x2"
+											srcset="./images/studio/team/01_l@1x-270.jpg 1x, ./images/studio/team/01_l@2x-540.jpg 2x"
 										>
 
 										<!-- tablet screen -->
 										<source
 											media="(min-width: 768px)"
-											srcset="./images/studio/team/01_m@1x-354.jpg x1, ./images/studio/team/01_m@2x-708.jpg x2"
+											srcset="./images/studio/team/01_m@1x-354.jpg 1x, ./images/studio/team/01_m@2x-708.jpg 2x"
 										>
 										
 										<!-- phone screen -->
 										<source
 										media="(max-width: 480px)"
-										srcset="./images/studio/team/01_s@1x-450.jpg x1, ./images/studio/team/01_s@2x-900.jpg x2"
+										srcset="./images/studio/team/01_s@1x-450.jpg 1x, ./images/studio/team/01_s@2x-900.jpg 2x"
 									>
 
 										<img
@@ -306,19 +324,19 @@
 										<!-- desktop screen -->
 										<source
 											media="(min-width: 1200px)"
-											srcset="./images/studio/team/02_l@1x-270.jpg x1, ./images/studio/team/02_l@2x-540.jpg x2"
+											srcset="./images/studio/team/02_l@1x-270.jpg 1x, ./images/studio/team/02_l@2x-540.jpg 2x"
 										>
 
 										<!-- tablet screen -->
 										<source
 											media="(min-width: 768px)"
-											srcset="./images/studio/team/02_m@1x-354.jpg x1, ./images/studio/team/02_m@2x-708.jpg x2"
+											srcset="./images/studio/team/02_m@1x-354.jpg 1x, ./images/studio/team/02_m@2x-708.jpg 2x"
 										>
 										
 										<!-- phone screen -->
 										<source
 										media="(max-width: 480px)"
-										srcset="./images/studio/team/02_s@1x-450.jpg x1, ./images/studio/team/02_s@2x-900.jpg x2"
+										srcset="./images/studio/team/02_s@1x-450.jpg 1x, ./images/studio/team/02_s@2x-900.jpg 2x"
 									>
 
 										<img
@@ -399,19 +417,19 @@
 										<!-- desktop screen -->
 										<source
 											media="(min-width: 1200px)"
-											srcset="./images/studio/team/03_l@1x-270.jpg x1, ./images/studio/team/03_l@2x-540.jpg x2"
+											srcset="./images/studio/team/03_l@1x-270.jpg 1x, ./images/studio/team/03_l@2x-540.jpg 2x"
 										>
 
 										<!-- tablet screen -->
 										<source
 											media="(min-width: 768px)"
-											srcset="./images/studio/team/03_m@1x-354.jpg x1, ./images/studio/team/03_m@2x-708.jpg x2"
+											srcset="./images/studio/team/03_m@1x-354.jpg 1x, ./images/studio/team/03_m@2x-708.jpg 2x"
 										>
 										
 										<!-- phone screen -->
 										<source
 										media="(max-width: 480px)"
-										srcset="./images/studio/team/03_s@1x-450.jpg x1, ./images/studio/team/03_s@2x-900.jpg x2"
+										srcset="./images/studio/team/03_s@1x-450.jpg 1x, ./images/studio/team/03_s@2x-900.jpg 2x"
 									>
 
 										<img
@@ -492,19 +510,19 @@
 										<!-- desktop screen -->
 										<source
 											media="(min-width: 1200px)"
-											srcset="./images/studio/team/04_l@1x-270.jpg x1, ./images/studio/team/04_l@2x-540.jpg x2"
+											srcset="./images/studio/team/04_l@1x-270.jpg 1x, ./images/studio/team/04_l@2x-540.jpg 2x"
 										>
 
 										<!-- tablet screen -->
 										<source
 											media="(min-width: 768px)"
-											srcset="./images/studio/team/04_m@1x-354.jpg x1, ./images/studio/team/04_m@2x-708.jpg x2"
+											srcset="./images/studio/team/04_m@1x-354.jpg 1x, ./images/studio/team/04_m@2x-708.jpg 2x"
 										>
 										
 										<!-- phone screen -->
 										<source
 										media="(max-width: 480px)"
-										srcset="./images/studio/team/04_s@1x-450.jpg x1, ./images/studio/team/04_s@2x-900.jpg x2"
+										srcset="./images/studio/team/04_s@1x-450.jpg 1x, ./images/studio/team/04_s@2x-900.jpg 2x"
 									>
 
 										<img
@@ -796,7 +814,7 @@
 			</div>			
 		</footer>
 
-		<div style="display: none" class="backdrop is-hidden" data-modal>
+		<div class="backdrop is-hidden" data-modal>
 			<div class="modal">
 				<button type="button" class="modal__close-btn" data-modal-close>
 					<svg class="modal__close-icon" width="18" height="18">
@@ -840,7 +858,42 @@
 				</form>
 			</div>
 		</div>
-		
+
+		<!-- phone menu  -->
+		<div class="menu__container js-menu-container" id="menu__mobile">
+			<button class="menu__toggle menu__toggle--nopaddig js-close-menu">
+				<svg class="menu__icon" width="40" height="40">
+					<use href="./images/icons.svg#icon-close_menu">
+					</use>
+				</svg>	
+			</button>
+	  
+			<ul class="menu__mobile">
+			  <li class="menu__items"><a href="./index.html" class="menu__link menu__link--current">Студія</a></li>
+			  <li class="menu__items"><a href="" class="menu__link">Портфоліо</a></li>
+			  <li class="menu__items"><a href="" class="menu__link">Контакти</a></li>
+			</ul>
+
+			<ul class="menu__mobile contacts_menu">
+				<li class="menu__items menu__items--tel"><a href="tel:+380961111111" class="menu__link">+38 096 111 11 11</a></li>
+				<li class="menu__items menu__items--mail"><a href="mailto:info@devstudio.com" class="menu__link">info@devstudio.com</a></li>
+			</ul>
+
+			<ul class="menu__mobile socials__menu">
+				<li class="menu__items menu__items--socials"><a href="" class="menu__link menu__link--socials">Instagram</a></li>
+				<li class="menu__items menu__items--socials"><a href="" class="menu__link menu__link--socials">Twitter</a></li>
+				<li class="menu__items menu__items--socials"><a href="" class="menu__link menu__link--socials">Facebook</a></li>
+				<li class="menu__items menu__items--socials"><a href="" class="menu__link menu__link--socials">LinkedIn</a></li>
+			</ul>
+		</div>
+
+		<script
+			defer
+			src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+			integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+			crossorigin="anonymous"
+    	>
+		</script>
 		<script src="./js/modal.js"></script>
 		<script src="./js/mobile-menu.js"></script>
 	</body>

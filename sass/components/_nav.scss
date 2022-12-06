@@ -1,4 +1,12 @@
 /* --- NAV STYLES --- */
+.nav {
+	display: none;
+
+	@media screen and (min-width: 768px) {
+		display: block;
+	}
+}
+
 .nav__link {
 	display: block;
 	text-decoration: none;

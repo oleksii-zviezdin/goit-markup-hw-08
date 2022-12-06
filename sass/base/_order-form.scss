@@ -19,9 +19,14 @@
 
 	font-size: 12px;
 	line-height: 1.17;
-	letter-spacing: 0.01em;
-
+	letter-spacing: 0.03em;	
+	
 	margin-bottom: 4px;	
+
+	@media screen and (min-width: 1200px) {
+		font-size: 14px;
+		line-height: 1.71;
+	}	
 }
 
 .order-form__field {
@@ -85,9 +90,14 @@
 	}
 }
 .order-form__span--checkbox {
-	font-size: 14px;
-	line-height: 1.71;
+	font-size: 12px;
+	line-height: 1.17;
 	letter-spacing: 0.03em;
+
+	@media screen and (min-width: 1200px) {
+		font-size: 14px;
+		line-height: 1.71;
+	}	
 }
 
 .order-form__agreement {
