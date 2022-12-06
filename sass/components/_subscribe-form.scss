@@ -52,7 +52,7 @@
 	font-size: 16px;
 	line-height: 1.25;
 
-	width: 360px;
+	width: 75vw;
 	height: 50px;
 
 	padding: 15px 16px;
@@ -63,6 +63,10 @@
 	background-color: transparent;
 
 	transition: box-shadow var(--transform-and-animation);
+
+	@media screen and (min-width: 481px) {
+		width: 360px;		
+	}
 
 	&:focus {
 		outline: none;

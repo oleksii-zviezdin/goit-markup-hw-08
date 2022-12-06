@@ -619,6 +619,7 @@ img {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  overflow: scroll;
 }
 @media screen and (min-width: 1200px) {
   .modal {
@@ -1608,7 +1609,7 @@ img {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
-  width: 360px;
+  width: 75vw;
   height: 50px;
   padding: 15px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1618,6 +1619,11 @@ img {
   transition: -webkit-box-shadow var(--transform-and-animation);
   transition: box-shadow var(--transform-and-animation);
   transition: box-shadow var(--transform-and-animation), -webkit-box-shadow var(--transform-and-animation);
+}
+@media screen and (min-width: 481px) {
+  .subscribe-form__input {
+    width: 360px;
+  }
 }
 .subscribe-form__input:focus {
   outline: none;
@@ -1753,7 +1759,7 @@ img {
   display: flex;
 }
 
-@media (max-width: 767px) {
+@media (min-width: 768px) {
   .menu {
     display: none;
   }
@@ -1784,10 +1790,16 @@ img {
 }
 .menu__toggle:hover .menu__icon, .menu__toggle:focus .menu__icon {
   fill: currentColor;
+  -webkit-transition: color var(--transform-and-animation);
+  transition: color var(--transform-and-animation);
+}
+.menu__toggle--pos-abslt {
+  position: absolute;
+  top: 16px;
+  right: 16px;
 }
 .menu__toggle--nopaddig {
   padding: 0;
-  fill: currentColor;
 }
 
 @media (min-width: 768px) {
@@ -1821,12 +1833,6 @@ img {
 .menu__container.is-open {
   -webkit-transform: translateX(0);
           transform: translateX(0);
-}
-.menu__container.is-open .menu__toggle {
-  position: absolute;
-  top: 16px;
-  right: 16px;
-  color: var(--h-headline-text-color);
 }
 
 .menu__mobile {
@@ -1866,12 +1872,17 @@ img {
   position: relative;
 }
 
-.menu__link--socials::after {
+.menu__items {
+  position: relative;
+}
+
+.menu__items--socials:not(:last-child)::after {
   position: absolute;
   top: 50%;
-  right: -10px;
+  right: -12px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  display: block;
   content: "";
   width: 1px;
   height: 20px;
@@ -1888,6 +1899,8 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: var(--insent);
 }
 
