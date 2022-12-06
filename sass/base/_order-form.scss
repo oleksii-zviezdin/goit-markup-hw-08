@@ -90,8 +90,7 @@
 	}
 }
 .order-form__span--checkbox {
-	// font-size: 12px;
-	font-size: 0.7em;
+	font-size: 12px;
 	line-height: 1.17;
 	letter-spacing: 0.03em;
 
@@ -103,7 +102,7 @@
 
 .order-form__agreement {
 	appearance: none;
-	width: 16px;
+	min-width: 16px;
 	height: 15px;
 	
 	border: 2px solid #212121;
