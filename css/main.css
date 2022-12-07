@@ -1095,10 +1095,6 @@ img {
 }
 
 /* --- BENEFITS SECTION --- */
-.benefits__section {
-  padding-bottom: 0;
-}
-
 .benefits__title {
   margin-bottom: 50px;
   font-weight: 700;
@@ -1757,6 +1753,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  overflow-y: scroll;
 }
 
 @media (min-width: 768px) {
