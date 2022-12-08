@@ -720,12 +720,12 @@ img {
 }
 
 /* --- SECTION STYLES --- */
-.costumer-section, .team-section, .work-section, .benefits-section, .hero-section, .portfolio-section {
+.footer-section-container, .costumer-section, .team-section, .work-section, .benefits-section, .hero-section, .portfolio-section {
   padding-top: 60px;
   padding-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
-  .costumer-section, .team-section, .work-section, .benefits-section, .hero-section, .portfolio-section {
+  .footer-section-container, .costumer-section, .team-section, .work-section, .benefits-section, .hero-section, .portfolio-section {
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -743,28 +743,28 @@ img {
 }
 
 /* --- CONTAINER --- */
-.footer__container, .buttons-container, .costumer, .team, .work, .benefits, .hero-container, .header__container {
+.footer-section-container, .buttons-container, .costumer, .team, .work, .benefits, .hero-container, .header__container {
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
 @media screen and (min-width: 480px) {
-  .footer__container, .buttons-container, .costumer, .team, .work, .benefits, .hero-container, .header__container {
+  .footer-section-container, .buttons-container, .costumer, .team, .work, .benefits, .hero-container, .header__container {
     width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
-  .footer__container, .buttons-container, .costumer, .team, .work, .benefits, .hero-container, .header__container {
+  .footer-section-container, .buttons-container, .costumer, .team, .work, .benefits, .hero-container, .header__container {
     width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .footer__container, .buttons-container, .costumer, .team, .work, .benefits, .hero-container, .header__container {
+  .footer-section-container, .buttons-container, .costumer, .team, .work, .benefits, .hero-container, .header__container {
     width: 1200px;
   }
 }
-.container--flex {
+.footer-contacts {
   --indent: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -776,7 +776,7 @@ img {
   gap: var(--indent);
 }
 @media screen and (min-width: 768px) {
-  .container--flex {
+  .footer-contacts {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -1091,8 +1091,10 @@ img {
 }
 
 /* --- BENEFITS SECTION --- */
-.benefits-section {
-  padding-bottom: 0;
+@media screen and (min-width: 1200px) {
+  .benefits-section {
+    padding-bottom: 0;
+  }
 }
 
 .benefits__title {
@@ -1690,8 +1692,6 @@ img {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  padding-top: 60px;
-  padding-bottom: 60px;
   background-color: var(--background-color-footer-hero);
 }
 
@@ -1728,7 +1728,7 @@ img {
   margin-top: 20px;
 }
 
-.footer__container {
+.footer-section-container {
   --indent: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1740,20 +1740,20 @@ img {
   gap: var(--indent);
 }
 @media screen and (max-width: 481px) {
-  .footer__container {
+  .footer-section-container {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
 }
 @media screen and (max-width: 1199px) {
-  .footer__container {
+  .footer-section-container {
     padding-left: 70px;
     padding-right: 70px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .footer__container {
+  .footer-section-container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;

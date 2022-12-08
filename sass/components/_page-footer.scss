@@ -4,9 +4,6 @@
 	line-height: 1.71;
 	letter-spacing: 0.03em;
 
-	padding-top: 60px;
-	padding-bottom: 60px;
-
 	background-color: var(--background-color-footer-hero);
 }
 
@@ -35,9 +32,10 @@
 	margin-top: 20px;
 }
 
-.footer__container {
+.footer-section-container {
+	@extend %section;
 	@extend %container;
-	
+
 	--indent: 60px;
 
 	display: flex;
@@ -58,6 +56,4 @@
 		align-items: baseline;
 		gap: 0;
 	}
-
-
 }
