@@ -4,6 +4,10 @@
 	--items: 1;
 }
 
+.team {
+	@extend %container;
+}
+
 .team__title {
 	margin-bottom: 30px;
 
@@ -52,4 +56,9 @@
 		
 	// }
 		
+}
+
+.team-section {
+	@extend %section;
+	background-color: var(--background-color-teams);
 }

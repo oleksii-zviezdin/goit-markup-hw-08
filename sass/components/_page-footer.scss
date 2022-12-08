@@ -36,6 +36,8 @@
 }
 
 .footer__container {
+	@extend %container;
+	
 	--indent: 60px;
 
 	display: flex;

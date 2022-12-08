@@ -321,8 +321,14 @@ summary {
   visibility: hidden;
 }
 .is-hidden .modal {
-  -webkit-transform: translate(-50%, -50%) scale(0.9);
-          transform: translate(-50%, -50%) scale(0.9);
+  -webkit-transform: translate(-50%, 0%) scale(0.9);
+          transform: translate(-50%, 0%) scale(0.9);
+}
+@media screen and (min-width: 1200px) {
+  .is-hidden .modal {
+    -webkit-transform: translate(-50%, -50%) scale(0.9);
+            transform: translate(-50%, -50%) scale(0.9);
+  }
 }
 
 /* --- BACKDROP STYLES --- */
@@ -345,8 +351,6 @@ body {
   background-color: var(--background-color-header);
   color: var(--primary-text-color);
   font-family: "Roboto", "Verdana", "Geneva", "Tahoma", sans-serif;
-  font-weight: 400;
-  font-style: normal;
 }
 body.no-scroll {
   overflow: hidden;
@@ -603,11 +607,14 @@ img {
 
 /* --- MODAL STYLES --- */
 .modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
   max-width: 450px;
-  max-height: 609px;
+  min-height: 609px;
   padding: 40px;
-  -webkit-transform: translate(0%, 0%) scale(1);
-          transform: translate(0%, 0%) scale(1);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
   background: var(--background-color-card-content);
   -webkit-box-shadow: var(--card-box-shadow);
           box-shadow: var(--card-box-shadow);
@@ -621,12 +628,15 @@ img {
       -ms-user-select: none;
           user-select: none;
 }
+@media screen and (min-width: 480px) and (max-width: 1199.9px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    max-width: 528px;
+    min-width: 528px;
     min-height: 581px;
     -webkit-transform: translate(-50%, -50%) scale(1);
             transform: translate(-50%, -50%) scale(1);
@@ -709,6 +719,18 @@ img {
   margin-bottom: 0;
 }
 
+/* --- SECTION STYLES --- */
+.costumer-section, .team-section, .work-section, .benefits-section, .hero-section, .portfolio-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .costumer-section, .team-section, .work-section, .benefits-section, .hero-section, .portfolio-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 /* --- TYPOGRAHPY STYLES --- */
 .title {
   margin-bottom: 50px;
@@ -720,51 +742,28 @@ img {
   color: var(--h-headline-text-color);
 }
 
-/* --- SECTION STYLES --- */
-.section {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-@media screen and (min-width: 1200px) {
-  .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-}
-
-.section--team {
-  background-color: var(--background-color-teams);
-}
-
-@media screen and (max-width: 1199px) {
-  .section__work {
-    display: none;
-  }
-}
-
 /* --- CONTAINER --- */
-.container {
+.footer__container, .buttons-container, .costumer, .team, .work, .benefits, .hero-container, .header__container {
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
 @media screen and (min-width: 480px) {
-  .container {
+  .footer__container, .buttons-container, .costumer, .team, .work, .benefits, .hero-container, .header__container {
     width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
-  .container {
+  .footer__container, .buttons-container, .costumer, .team, .work, .benefits, .hero-container, .header__container {
     width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .container {
+  .footer__container, .buttons-container, .costumer, .team, .work, .benefits, .hero-container, .header__container {
     width: 1200px;
   }
 }
-
 .container--flex {
   --indent: 60px;
   display: -webkit-box;
@@ -789,11 +788,6 @@ img {
         -ms-flex-align: baseline;
             align-items: baseline;
   }
-}
-
-.container__buttons {
-  margin-bottom: 50px;
-  padding-bottom: 0;
 }
 
 /* --- HEADER STYLES --- */
@@ -983,7 +977,9 @@ img {
   }
 }
 
-.hero__section {
+.hero-section {
+  padding-top: 118px;
+  padding-bottom: 118px;
   text-align: center;
   color: var(--h1-headline-text-color);
   background-color: var(--background-color-footer-hero);
@@ -998,37 +994,37 @@ img {
   background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studio/hero/bg_s@1x.jpg);
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .hero__section {
+  .hero-section {
     background-image: -webkit-gradient(linear, right top, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/studio/hero/bg_s@2x.jpg);
     background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studio/hero/bg_s@2x.jpg);
   }
 }
 @media screen and (min-width: 481px) {
-  .hero__section {
+  .hero-section {
     background-image: -webkit-gradient(linear, right top, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/studio/hero/bg_m@1x.jpg);
     background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studio/hero/bg_m@1x.jpg);
   }
 }
 @media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
-  .hero__section {
+  .hero-section {
     background-image: -webkit-gradient(linear, right top, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/studio/hero/bg_m@2x.jpg);
     background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studio/hero/bg_m@2x.jpg);
   }
 }
 @media screen and (min-width: 769px) {
-  .hero__section {
+  .hero-section {
     background-image: -webkit-gradient(linear, right top, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/studio/hero/bg_l@1x.jpg);
     background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studio/hero/bg_l@1x.jpg);
   }
 }
 @media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
-  .hero__section {
+  .hero-section {
     background-image: -webkit-gradient(linear, right top, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/studio/hero/bg_l@2x.jpg);
     background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studio/hero/bg_l@2x.jpg);
   }
 }
 @media screen and (min-width: 769px) and (min-width: 1200px) {
-  .hero__section {
+  .hero-section {
     padding-top: 200px;
     padding-bottom: 200px;
   }
@@ -1095,6 +1091,10 @@ img {
 }
 
 /* --- BENEFITS SECTION --- */
+.benefits-section {
+  padding-bottom: 0;
+}
+
 .benefits__title {
   margin-bottom: 50px;
   font-weight: 700;
@@ -1220,6 +1220,12 @@ img {
   background-color: var(--background-color-work-section);
 }
 
+@media screen and (max-width: 1199.9px) {
+  .work-section {
+    display: none;
+  }
+}
+
 /* --- TEAM SECTION --- */
 :root {
   --indent: 30px;
@@ -1271,6 +1277,10 @@ img {
     -ms-flex-preferred-size: calc((100% - var(--indent) * (var(--items) - 1)) / (var(--items)));
         flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / (var(--items)));
   }
+}
+
+.team-section {
+  background-color: var(--background-color-teams);
 }
 
 /* --- SOCIALS STYLES --- */
@@ -1447,6 +1457,11 @@ img {
 }
 
 /* --- BUTTONS STYLES --- */
+.buttons {
+  margin-bottom: 50px;
+  padding-bottom: 0;
+}
+
 .buttons__item {
   font-family: inherit;
   font-weight: 500;
@@ -1504,6 +1519,7 @@ img {
 .contacts__address {
   font-style: normal;
   color: var(--address-text-color);
+  text-align: center;
 }
 
 .contacts__link {

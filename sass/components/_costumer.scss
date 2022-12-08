@@ -1,4 +1,7 @@
 /* --- COSTUMER SECTION --- */
+.costumer {
+	@extend %container;
+}
 .costumer__title {
 	margin-bottom: 30px;
 	
@@ -69,4 +72,8 @@
 
 .costumer__icon {
 	fill: currentColor;
+}
+
+.costumer-section {
+	@extend %section;
 }

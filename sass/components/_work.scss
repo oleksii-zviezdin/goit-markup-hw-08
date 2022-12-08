@@ -1,4 +1,8 @@
 /* --- WORK SECTION --- */
+.work {
+	@extend %container;
+}
+
 .work__list {
 	display: flex;
 	flex-wrap: wrap;
@@ -43,4 +47,12 @@
 	color: var(--color-text-white);
 
 	background-color: var(--background-color-work-section);
+}
+
+.work-section {
+	@extend %section;
+
+	@media screen and (max-width: 1199.9px) {
+		display: none;
+	}
 }

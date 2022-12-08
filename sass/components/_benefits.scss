@@ -1,6 +1,12 @@
 /* --- BENEFITS SECTION --- */
-.benefits__section {
-	// padding-bottom: 0;
+.benefits {
+	@extend %container;
+}
+
+.benefits-section {
+	@extend %section;
+
+	padding-bottom: 0;
 }
 
 .benefits__title {

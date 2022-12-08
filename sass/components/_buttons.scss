@@ -1,4 +1,9 @@
 /* --- BUTTONS STYLES --- */
+.buttons {	
+	margin-bottom: 50px;
+	padding-bottom: 0;
+}
+
 .buttons__item {
 	font-family: inherit;
 	font-weight: 500;
@@ -34,4 +39,8 @@
 	display: flex;
 	justify-content: center;
 	gap: 8px;
+}
+
+.buttons-container {
+	@extend %container;
 }

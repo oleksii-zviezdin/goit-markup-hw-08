@@ -5,6 +5,12 @@
 	visibility: hidden;
 
 	& .modal {
-		transform: translate(-50%, -50%) scale(0.9);
+		transform: translate(-50%, 0%) scale(0.9);
+	}
+
+	@media screen and (min-width: 1200px) {
+		& .modal {
+			transform: translate(-50%, -50%) scale(0.9);
+		}		
 	}
 }

@@ -1,5 +1,5 @@
 /* --- CONTAINER --- */
-.container {	
+%container {	
 	margin-right: auto;
 	margin-left: auto;	
 	padding-left: 15px;
@@ -21,6 +21,20 @@
 	@media screen and (min-width: 1200px) {
 		width: 1200px;
 	}
+
+	&--flex {
+		--indent: 60px;
+	
+		display: flex;
+		flex-direction: column;
+		gap: var(--indent);
+	
+		@media screen and (min-width: 768px) {	
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: baseline;	
+		}
+	}
 }
 
 .container--flex {
@@ -35,9 +49,4 @@
 		justify-content: space-between;
 		align-items: baseline;	
 	}
-}
-
-.container__buttons {
-	margin-bottom: 50px;
-	padding-bottom: 0;
 }

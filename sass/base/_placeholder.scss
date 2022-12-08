@@ -1,20 +1,10 @@
 /* --- SECTION STYLES --- */
-.section {
+%section {
 	padding-top: 60px;
 	padding-bottom: 60px;
-	
+		
 	@media screen and (min-width: 1200px) {		
 		padding-top: 94px;
 		padding-bottom: 94px;
-	}
-}
-
-.section--team {
-	background-color: var(--background-color-teams);
-}
-
-.section__work {
-	@media screen and (max-width: 1199px) {
-		display: none;
 	}
 }

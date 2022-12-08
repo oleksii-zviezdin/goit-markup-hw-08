@@ -16,11 +16,14 @@
 @import './base/order-form';
 @import './base/modal';
 
+// placeholder
+@import './base/placeholder';
+
 // Components styles
 @import './components/typography';
-@import './components/section';
 @import './components/container';
 @import './components/page-header';
+@import './components/portfolio';
 @import './components/logo';
 @import './components/nav';
 @import './components/contact';
