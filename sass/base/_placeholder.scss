@@ -8,3 +8,34 @@
 		padding-bottom: 94px;
 	}
 }
+
+/* --- CONTAINER --- */
+%container {	
+	margin-right: auto;
+	margin-left: auto;	
+	padding-left: 15px;
+	padding-right: 15px;
+	
+	// outline: 1px solid red;
+
+	// phone screen
+	@media screen and (min-width: 480px) {
+		width: 480px;
+	}
+
+	// tablet screen
+	@media screen and (min-width: 768px) {
+		width: 768px;
+	}
+
+	// desktop screen
+	@media screen and (min-width: 1200px) {
+		width: 1200px;
+	}
+	
+	@media screen and (min-width: 768px) {	
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: baseline;	
+	}
+}
