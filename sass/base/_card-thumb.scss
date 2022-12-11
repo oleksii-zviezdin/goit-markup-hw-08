@@ -8,6 +8,8 @@
 	position: absolute;
 	left: 0;
 	bottom: 0;
+
+	height: 100%;
 	
 	font-size: 18px;
 	line-height: 1.56;
@@ -23,6 +25,8 @@
 }
 
 .card-thumb__content {
+	flex-grow: 1;	
+	
 	padding-top: 20px;
 	padding-bottom: 20px;
 	padding-right: 24px;

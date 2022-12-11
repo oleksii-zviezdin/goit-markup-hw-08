@@ -1,6 +1,5 @@
 .menu {
     display: flex;
-    overflow-y: scroll;
   }
   
 @media (min-width: 768px) {
@@ -74,7 +73,8 @@
     transition: transform var(--transform-and-animation);
 
     &.is-open {
-    transform: translateX(0);
+      overflow-y: scroll;
+      transform: translateX(0);
     }    
 }
     
